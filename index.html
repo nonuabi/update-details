@@ -2,37 +2,69 @@
 <html>
   <head>
     <title>Upload Details</title>
-
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="main-container">
-      <div class="headline">
-        <h2>Add Student Data</h2>
+    <div class="main">
+      <div class="first">
+        <!-- headline -->
+
+        <h1 class="headline">Add Student Data</h1>
+
+        <!-- Enter student details -->
+
+        <div class="entry-detials">
+          <!-- roll number -->
+
+          <div class="entry" id="entry-rollno">
+            <div class="entry-lable" id="entry-lable__rollno">
+              <h4>Roll No.</h4>
+            </div>
+
+            <div class="entry-input" id="entry-input__rollno">
+              <input type="number" required />
+            </div>
+          </div>
+
+          <!-- name -->
+
+          <div class="entry" id="entry-name">
+            <div class="entry-lable" id="entry-lable__name">
+              <h4>Name</h4>
+            </div>
+
+            <div class="entry-input" id="entry-input__name">
+              <input type="text" required />
+            </div>
+          </div>
+
+          <!-- marks -->
+
+          <div class="entry" id="entry-marks">
+            <div class="entry-lable" id="entry-lable__marks">
+              <h4>Marks</h4>
+            </div>
+
+            <div class="entry-input" id="entry-input__marks">
+              <input type="number" required />
+            </div>
+          </div>
+        </div>
+
+        <!-- /detail entry close -->
+
+        <!-- add details button -->
+
+        <div class="btn">
+          <button>Add Details</button>
+        </div>
       </div>
 
-      <div class="enter-detials">
-        <div class="entry" id="rollno">
-          <h4>Roll No.</h4>
-          <div class="entry-input">
-            <input type="number" />
-          </div>
-        </div>
+      <!-- display details -->
 
-        <div class="entry" id="name">
-          <h4>Name</h4>
-          <div class="entry-input">
-            <input type="number" />
-          </div>
-        </div>
+      <div class="second"></div>
 
-        <div class="entry" id="marks">
-          <h4>Marks</h4>
-          <div class="entry-input">
-            <input type="number" />
-          </div>
-        </div>
-      </div>
+      <!-- /display details -->
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"

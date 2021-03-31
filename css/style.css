@@ -1,29 +1,66 @@
 *,
-*::after,
-*::before {
+*::before,
+::after {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
 }
+.main {
+  display: flex;
+}
+
+/* left side container */
+
+.first {
+  width: 50vw;
+  height: 100vh;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .headline {
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.entry-detials div,
+h4 {
+  display: flex;
+  justify-content: space-around;
+}
+.entry-detials div {
+  margin-top: 10px;
 }
 /* .entry {
   text-align: center;
 } */
-
-h4 {
-  position: relative;
-  top: 45px;
-  margin-left: 500px;
+.entry-detials {
+  margin-bottom: 10%;
 }
-input {
-  width: 200px;
-  height: 28px;
-  border: 2px solid black;
-  margin: 0px 0 0 745px;
+.entry-input {
+  height: 35px;
+}
+
+#entry-input__name {
+  margin-left: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  width: 180px;
+  height: 40px;
+}
+
+/* right side container */
+
+.second {
+  width: 50vw;
+  height: 100vh;
+  background-color: yellowgreen;
 }
