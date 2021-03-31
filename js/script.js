@@ -2,17 +2,27 @@ var studentName;
 var studentRollNo;
 var studentMarks;
 
+var check = false;
+
 function display() {
-  $(".display-column").
-  // console.log(
-  //   "<h3 Roll no - ",
-  //   studentRollNo,
-  //   ",",
-  //   studentName,
-  //   " has scored ",
-  //   studentMarks,
-  //   " marks </h3"
-  // );
+  let item =
+    '<div class="item">Roll no - <span class="highlight">' +
+    studentRollNo +
+    '</span> , <span class="highlight">' +
+    studentName +
+    '</span> have got <span class="highlight">' +
+    studentMarks +
+    "</span> marks</div>";
+  $(".right").append(item);
+  console.log(item);
+  if (check) {
+    $(".item:nth-child()").css("background-color", "lightgrey");
+    check = false;
+  } else {
+    check = true;
+  }
+
+  $(".entry-input input").val("");
 }
 
 function collectData() {

@@ -62,12 +62,11 @@ h4 {
 .right {
   width: 45vw;
   height: 100vh;
-  background-color: yellowgreen;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.display-column {
+/* .display-column {
   width: 45vw;
   height: 40px;
   background-color: #d3d3d3;
@@ -76,4 +75,12 @@ h4 {
   width: 45vw;
   height: 40px;
   background-color: white;
+} */
+/* .items:nth-child() {
+  background-color: lightgrey;
+} */
+.highlight {
+  background-color: forestgreen;
+  color: white;
+  padding: 0 10px;
 }
